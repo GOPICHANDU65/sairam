@@ -12,5 +12,19 @@ public class A {
         System.out.println(og.getStudent().name);
         System.out.println(og.getStudent().rollno);
         System.out.println(og.getStudent().email);
+        System.out.println(og.getAddress().houseno);
+        System.out.println(og.getAddress().street);
+        System.out.println(og.getAddress().village);
+        System.out.println(og.getAddress().pincode);
         }
+    public Address getAddress(){
+        Address chandu = new Address();
+        chandu.houseno = "1\18";
+        chandu.street = "jayanthiroad";
+        chandu.village = "peddapuram";
+        chandu.pincode = 521181;
+        return chandu;
+
+    }
+
 }

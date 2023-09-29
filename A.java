@@ -5,11 +5,14 @@ public class A {
      chandu.rollno = 105;
      chandu.email = "chandu@gmail.com";
      Address address=new Address();
-     address.houseno="1\18";
+     address.houseno="18";
      address.street="jayanthiroad";
      address.village="peddapuram";
      address.pincode=521181;
      chandu.Address=address;
+     Country country=new Country();
+     country.country="india";
+     address.Country= country;
      return chandu;
 
 
@@ -24,6 +27,7 @@ public class A {
         System.out.println(og.getStudent().Address.street);
         System.out.println(og.getStudent().Address.village);
         System.out.println(og.getStudent().Address.pincode);
+        System.out.println(og.getStudent().Address.Country.country);
 
         }
 

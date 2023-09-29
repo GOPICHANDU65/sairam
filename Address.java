@@ -3,4 +3,5 @@ public class Address {
     String street;
     String village;
     Integer pincode;
+    public Country Country;
 }

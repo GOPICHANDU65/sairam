@@ -4,7 +4,15 @@ public class A {
      chandu.name = "HARI";
      chandu.rollno = 105;
      chandu.email = "chandu@gmail.com";
+     Address address=new Address();
+     address.houseno="1\18";
+     address.street="jayanthiroad";
+     address.village="peddapuram";
+     address.pincode=521181;
+     chandu.Address=address;
      return chandu;
+
+
 
     }
         public static void main(String[]args){
@@ -12,19 +20,14 @@ public class A {
         System.out.println(og.getStudent().name);
         System.out.println(og.getStudent().rollno);
         System.out.println(og.getStudent().email);
-        System.out.println(og.getAddress().houseno);
-        System.out.println(og.getAddress().street);
-        System.out.println(og.getAddress().village);
-        System.out.println(og.getAddress().pincode);
-        }
-    public Address getAddress(){
-        Address chandu = new Address();
-        chandu.houseno = "1\18";
-        chandu.street = "jayanthiroad";
-        chandu.village = "peddapuram";
-        chandu.pincode = 521181;
-        return chandu;
+        System.out.println(og.getStudent().Address.houseno);
+        System.out.println(og.getStudent().Address.street);
+        System.out.println(og.getStudent().Address.village);
+        System.out.println(og.getStudent().Address.pincode);
 
-    }
+        }
+
+
+
 
 }

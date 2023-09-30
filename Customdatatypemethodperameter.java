@@ -18,12 +18,13 @@ public class Customdatatypemethodperameter {
 
     }
 
-    public Student getstudent(Address add){
+    public Student getstudent(Address add,Country c){
      Student chandu=new Student();
      chandu.name="hari";
      chandu.rollno=105;
      chandu.email="chandu@gmail.com";
      chandu.Address=add;
+     chandu.Address.Country=c;
      return chandu;
 
 
@@ -34,8 +35,14 @@ public class Customdatatypemethodperameter {
         address.street="jayanthiroad";
         address.village="peddapuram";
         address.pincode=521181;
+        Country cc= new Country();
+        cc.country="india";
         Customdatatypemethodperameter abc=new Customdatatypemethodperameter();
-        System.out.println(abc.getstudent(address).Address.houseno);
+        System.out.println(abc.getstudent(address,cc).Address.houseno);
+        System.out.println(abc.getstudent(address,cc).Address.Country.country);
+
+
+
 
     }
 }

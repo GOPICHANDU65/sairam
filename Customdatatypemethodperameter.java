@@ -35,7 +35,7 @@ public class Customdatatypemethodperameter {
         address.village="peddapuram";
         address.pincode=521181;
         Customdatatypemethodperameter abc=new Customdatatypemethodperameter();
-        System.out.println(abc.getstudent(address));
+        System.out.println(abc.getstudent(address).Address.houseno);
 
     }
 }

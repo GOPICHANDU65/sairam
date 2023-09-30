@@ -5,7 +5,7 @@ public class AB {
     }
         public static void main(String[]args){
         AB ab=new AB();
-        System.out.println(ab.getab(2,3));
+        System.out.println(ab.getab(2,2));
 
         }
 

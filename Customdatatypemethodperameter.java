@@ -39,6 +39,9 @@ public class Customdatatypemethodperameter {
         cc.country="india";
         Customdatatypemethodperameter abc=new Customdatatypemethodperameter();
         System.out.println(abc.getstudent(address,cc).Address.houseno);
+        System.out.println(abc.getstudent(address,cc).Address.street);
+        System.out.println(abc.getstudent(address,cc).Address.village);
+        System.out.println(abc.getstudent(address,cc).Address.pincode);
         System.out.println(abc.getstudent(address,cc).Address.Country.country);
 
 

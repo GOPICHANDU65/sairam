@@ -4,4 +4,7 @@ public class Address {
     String village;
     Integer pincode;
     public Country Country;
+    public Address(){
+        System.out.println("from Address");
+    }
 }
